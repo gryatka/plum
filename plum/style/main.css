@@ -1,0 +1,196 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+#menu-checkbox{
+    display: none;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: gold;
+    background: url(../images/plum.jpg) no-repeat center top / cover;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+
+.menu li{
+    display: flex;
+}
+
+.menu a{
+    text-decoration: none;
+    color: gold;
+    padding: 10px;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    color: gold;
+    background: #000;
+    opacity: 0.7;
+}
+
+#menu960{
+    display: none;
+}
+
+.menu960{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.menu960 li{
+    display: flex;
+}
+
+.menu960 a{
+    text-decoration: none;
+    color: gold;
+    padding: 10px;
+}
+
+.menu960 a:hover{
+    text-decoration: underline;
+    color: gold;
+    background: #000;
+    opacity: 0.7;
+}
+
+nav{
+    padding: 1% 0 0;
+    color: gold;
+}
+
+
+.zero_margin{
+    margin: 0;
+}
+
+.x572{
+    font-size: 1140%;
+}
+
+.x235{
+    font-size: 470%;
+}
+
+.x280{
+    font-size: 561%;
+}
+
+.x200 {
+    font-size: 237%;
+}
+
+.plum{
+    text-transform: uppercase;
+    line-height: 0.8;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anime{
+    border: gold solid 5px;
+    padding: 2%;
+    opacity: 0.8;
+    max-width: 90%;
+}
+
+@media screen and (max-width: 1440px) {
+    .menu{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #menu960{
+        display: block;
+    }
+    #menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #menu960 {
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    .menu{
+        display: block;
+    }
+    .menu li{
+        display: block;
+    }
+    .menu a{
+        display: block;
+    }
+    .x200 {
+        font-size: 5vw;
+    }
+    .x572{
+        font-size: 24vw;
+    }
+
+    .x235{
+        font-size: 9.9vw;
+    }
+
+    .x280{
+        font-size: 11.7vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .menu{
+        display: none;
+    }
+    .menu li{
+        display: block;
+    }
+    .menu a{
+        display: block;
+    }
+    .toggle-buttom{
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        color: gold;
+        margin-top: 20px;
+    }
+    .toggle-buttom:after{
+        content: attr(data-open);
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .menu{
+        display: block;
+    }
+    #menu-checkbox:checked + nav[role="navigation"] .toggle-buttom:after{
+        content: attr(data-close);
+    }
+    .menu{
+        position: relative;
+        top: 20px;
+        margin-bottom: 30px;
+    }
+}
