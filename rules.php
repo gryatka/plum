@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/bootstrap.css">
     <script type="text/javascript" src="script\rules.js"></script>
     <link rel="stylesheet" href="style\rules.css"> 
     <title>Rules and FAQ</title>
@@ -11,32 +12,9 @@
 </head>
 <body>
     <header>
-            <input type="checkbox" id="menu-checkbox">
-                <nav role="navigation">
-                    <label for="menu-checkbox" class="toggle-buttom" data-open="МЕНЮ" data-close="ЗАКРЫТЬ" onclick></label>
-                <div id="menu">
-                    <ul class="menu">
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="library.html">Библиотека постов</a></li>
-                        <li><a href="addres.html">Дополнительные ресурсы</a></li>
-                        <li><a href="rules.html">Правила и FAQ</a></li>
-                        <li><a href="https://nyaa.pantsu.cat/" target="_blank">Аниме трекер</a></li>
-                        <li><a href="https://t.me/plumtg" target="_blank">Мы в Telegram</a></li>
-                    </ul>
-                </div>
-                <div id="menu960">
-                    <ul class="menu960">
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="library.html">Библиотека постов</a></li>
-                        <li><a href="addres.html">Дополнительные ресурсы</a></li>
-                        <li><a href="rules.html">Правила и FAQ</a></li>
-                    </ul>
-                    <ul class="menu960">
-                        <li><a href="https://nyaa.pantsu.cat/" target="_blank">Аниме трекер</a></li>
-                        <li><a href="https://t.me/plumtg" target="_blank">Мы в Telegram</a></li>
-                    </ul>
-                </div>
-            </nav>
+                                        <?php
+                                            require 'tpl/header.php'; 
+                                        ?>
     </header>
     <section>
             <div class="rules">
@@ -324,5 +302,8 @@
                 </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="script/bootstrap.js"></script>
 </body>
 </html>
