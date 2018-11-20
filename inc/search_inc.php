@@ -1,12 +1,11 @@
 <?php
-
     $search = clear_string($_GET['search']);
-    echo '«'.$search.'» результаты: <br/>';
+    echo '<div class="sorting"><strong>«'.$search.'» результаты: <br/></strong></div>';
 
     if (!$products) {
-        echo 'Поиск не дал результатов';
+        echo "Поиск не дал результатов";
     } else { ?>
-        <ul class="catalog">
+        <ul class="catalog webpad">
             <?php include 'inc/all_products_inc.php'; ?>
         </ul>
 <?php   } 

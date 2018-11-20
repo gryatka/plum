@@ -42,4 +42,24 @@ $(document).ready(function () {
         $('#block_it').toggleClass('stop').prop("readonly", true);
     });
 
+    // меню для телефонов
+    $('.sm_menu_btn').click(function() {
+        $('.collapsed_menu').toggleClass('d-flex');
+    });
+
+    // каталог для телефонов
+    $('.sm_catalog__btn').click(function() {
+        $('.sm_catalog__list').addClass('d-flex');
+    });
+
+    $('.catalog_close_btn').click(function() {
+        $('.sm_catalog__list').removeClass('d-flex');
+    });
+
+    $('.open_sub__btn').click(function() {
+        $(this).toggleClass('opened_sub').next().slideToggle();
+        $('.open_sub__btn').not(this).removeClass('opened_sub').next().slideUp();
+        // $('.sm_catalog__submenu').toggleClass('d-block');
+    });
+
 });

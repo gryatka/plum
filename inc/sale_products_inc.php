@@ -1,4 +1,12 @@
 <?php
+    
+if (isset($_GET['sale'])) {
+    echo '
+    <div class="sorting">
+        Сортировка по: <strong>имени</strong> (<span id="name_asc">от А до Я</span>/ <span id="name_desc">от Я до А</span>); <strong>цене</strong> (<span id="price_asc">по возрастанию</span>/ <span id="price_desc">по убыванию</span>)
+    </div>';
+}
+        
     foreach ($sale_products as $product) {
         $product_id         = $product['product_id'];
         $product_name       = $product['product_name'];
@@ -9,8 +17,8 @@
         $subcategory_name   = $product['subcategory_name'];
         $get_image          = get_image($image);
             echo<<<_END
-                <li class="catalog_element">
-                    <a href="index.php?product=$product_id" class="catalog_element_link">
+                <li class="catalog__element">
+                    <a href="index.php?product=$product_id" class="catalog__element_link">
                         <div class="preview_img">
                             $get_image
                         </div>

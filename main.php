@@ -7,9 +7,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style\bootstrap.css">
     <link rel="stylesheet" href="style\main.css">
     <title>Main</title>
 </head>
@@ -38,6 +39,7 @@
 ?>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="script/script.js"></script>
+<script src="script/bootstrap.js"></script>
 <script src="script/jquery.cookie.js"></script>
 </body>
 </html>

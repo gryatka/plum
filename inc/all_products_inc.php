@@ -9,8 +9,8 @@
         $subcategory_name   = $product['subcategory_name'];
         $get_image          = get_image($image);
             echo<<<_END
-                <li class="catalog_element">
-                    <a href="index.php?product=$product_id" class="catalog_element_link">
+                <li class="catalog__element">
+                    <a href="index.php?product=$product_id" class="catalog__element_link">
                         <div class="preview_img">
                             $get_image
                         </div>
