@@ -1,7 +1,7 @@
 <div class="wrapper">
     <div class="container">
         <div class="sm_catalog__list">
-            <ul class="sm_catalog__menu bg-black">
+            <ul class="sm_catalog__menu bg-black wopad">
                 <?php include_once 'nav_inc.php' ?>
             </ul>
         </div>

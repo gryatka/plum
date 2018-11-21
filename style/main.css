@@ -136,14 +136,16 @@ ul.submenu > li:hover > a {
     background-color: rgba(0, 0, 0, 0.1);
 }
 .sm_catalog__btn {
-    cursor: pointer;
     width: 300px;
     margin: 0 auto;
     background-color: #67686A;
-    text-align: center;
 }
 .sm_catalog__link {
     padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    display: block;
 }
 .sm_catalog__list {
     display: none;
@@ -159,8 +161,8 @@ ul.submenu > li:hover > a {
     width: 25px;
     text-align: center;
     position: absolute;
-    top: 1em;
-    right: 50px;
+    top: 10px;
+    right: 20px;
     cursor: pointer; 
 }
 .catalog_link::before {
@@ -168,27 +170,31 @@ ul.submenu > li:hover > a {
     font-family: "FontAwesome";
     font-size: 25px;
 }
-.sm_catalog__submenu {
-    display: none;
-}
-.open_sub {
-    margin-right: 0;
-}
-.open_sub__btn {
-    cursor: pointer;
-    text-align: center;
-    padding-right: 15px;
-}
-.open_sub__btn::before {
-    content: "\f104";
-    font-family: "FontAwesome";
-}
-.opened_sub {
-    transition: 0.3s;
-    transform: rotate(-90deg);
-}
 .marl {
     margin-left: -15px;
+}
+.sm_subcat {
+    display: none;
+    position: relative;
+}
+.collapse_subcat {
+    cursor: pointer;
+    border: 1px solid #67686A;
+    padding: 2px 5px;
+}
+.collapsible_subcat {
+    display: none;
+    position: absolute;
+    top: 53px;
+    width: 510px;
+    background-color: #FFF;
+    border: 1px solid #67686A;
+}
+.collapsible_subcat li:hover {
+    background-color: bisque;
+}
+.padl {
+    padding-left: 5px;
 }
 /* СОРТИРОВКА */
 .sorting {
@@ -360,6 +366,12 @@ ul.submenu > li:hover > a {
     .nav-link {
         padding: 10px 0;
     }
+    .sm_subcat {
+        display: block;
+    }
 }
 @media (max-width: 575px) {
+    .collapsible_subcat {
+        width: 100%;
+    }
 }

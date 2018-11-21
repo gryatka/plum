@@ -1,6 +1,6 @@
 <div class="sm_catalog">
     <div class="sm_catalog__btn nav">
-        <a class="text-white w-100 sm_catalog__link">КАТАЛОГ</a>
+        <a class="text-white sm_catalog__link">КАТАЛОГ</a>
     </div>
 </div>
 

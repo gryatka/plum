@@ -56,10 +56,18 @@ $(document).ready(function () {
         $('.sm_catalog__list').removeClass('d-flex');
     });
 
-    $('.open_sub__btn').click(function() {
-        $(this).toggleClass('opened_sub').next().slideToggle();
-        $('.open_sub__btn').not(this).removeClass('opened_sub').next().slideUp();
-        // $('.sm_catalog__submenu').toggleClass('d-block');
-    });
+    // $('.open_sub__btn').click(function() {
+    //     $(this).toggleClass('opened_sub').next().slideToggle();
+    //     $('.open_sub__btn').not(this).removeClass('opened_sub').next().slideUp();
+    //     // $('.sm_catalog__submenu').toggleClass('d-block');
+    // });
 
+    $('.collapse_subcat').click(function() {
+        $('.collapsible_subcat').slideToggle();
+    });
+    
+    $(".collapsible_subcat").on("click", "li", function(){
+        s_user = $(this).text();
+        $(".collapse_subcat__name").val(s_user); //деактивируем input, если нужно
+    })
 });
