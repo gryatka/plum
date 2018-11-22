@@ -17,13 +17,9 @@
                         if (isset($_GET['type'])) {
                             include 'main_products_page.php';
                         } elseif (isset($_GET['sale'])) { ?>
-                            <ul class="catalog wopad">
                                 <?php include 'inc/sale_products_inc.php' ?>
-                            </ul>
                     <?php   } elseif (isset($_GET['news'])) { ?>
-                            <ul class="catalog wopad">
                                 <?php include 'inc/new_products_inc.php' ?>
-                            </ul>
                     <?php   } elseif (isset($_GET['search'])) { ?>
                                 <?php include 'inc/search_inc.php' ?>
                     <?php   } elseif (isset($_GET['product'])) {

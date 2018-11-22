@@ -6,8 +6,10 @@ if (isset($_GET['news'])) {
             Сортировка по: <strong>имени</strong> (<span id="name_asc">от А до Я</span>/ <span id="name_desc">от Я до А</span>); <strong>цене</strong> (<span id="price_asc">по возрастанию</span>/ <span id="price_desc">по убыванию</span>)
         </div>
     ';
-}
-
+} ?>
+        
+    <ul class="catalog wopad">
+<?php
     foreach ($new_products as $product) {
         $product_id         = $product['product_id'];
         $product_name       = $product['product_name'];
@@ -51,4 +53,5 @@ _END;
                     </div>
                 </li>
 _END;
-    }
+    } ?>
+    </ul>
